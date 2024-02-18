@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<title>Menu Sidebar</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  .hamburger {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #b800e6;
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.9, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .container {
+    display: flex;
+  }
+
+  /* Slidebar*/
+  .nav-slider {
+    height: 100%;
+    background-color: #242424;
+    color: aliceblue;
+    width: 200px;
+  }
+  
+  .contai-slibar{
+    min-height: 100vh;
+  }
+  .contai-slibar .logo{
+    background-color: #2C2C2C;
+    font-size: 2.0rem;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+  }
+  .menu-nav {
+    margin-top: 30px;
+
+  }
+  .menu-nav .title-menu{
+    font-size: 10pt;
+    padding-left: 20px;
+    color: #0D99FF;
+  }
+  
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- NAV SILDERBAR -->
+    <div class="nav-slider" id="menu-slide">
+        <div class="contai-slibar">
+            <div class="logo">
+                <h1>CRM</h1>
+            </div>
+            <div class="menu-nav">
+                <div class="title-menu">YOUR COMPANY</div>
+                <div class="dropdown-menu">
+                    <button>Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END NAV SILDERBAR -->
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <div id="header-menu">
+                <label class="hamburger" for="check-icon">
+                    <input type="checkbox" id="check-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M27 10 L13 10 C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6 L17 26 C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22 L7 22" class="line line-top-bottom" />
+                        <path d="M7 16 L27 16" class="line"/>
+                    </svg>
+                </label>             
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+</div>
+</body>
+</html>
