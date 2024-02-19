@@ -4,176 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nav/slide-bar-menu.css">
 <title>Menu Sidebar</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-  }
-  .hamburger {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    background: #b800e6;
-    cursor: pointer;
-  }
-  
-  .hamburger input {
-    display: none;
-  }
-  
-  .hamburger svg {
-    height: 3em;
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line-top-bottom {
-    stroke-dasharray: 12 63;
-  }
-  
-  .hamburger input:checked + svg {
-    transform: rotate(-45deg);
-  }
-  
-  .hamburger input:checked + svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-  }
-  
-  .line {
-    fill: none;
-    stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.9, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .container {
-    display: flex;
-  }
 
-  /* Slidebar*/
-  .nav-slider {
-    position: relative;
-    height: 100%;
-    background-color: #242424;
-    color: aliceblue;
-    width: 200px;
-  }
-  
-  .contai-slibar{
-    min-height: 100vh;
-  }
-  .contai-slibar .logo{
-    background-color: #2C2C2C;
-    font-size: 2.0rem;
-    font-weight: 600;
-    padding: 10px;
-    text-align: center;
-  }
-  .menu-nav {
-    margin-top: 30px;
-
-  }
-  .menu-nav .title-menu{
-    font-size: 10pt;
-    padding-left: 20px;
-    color: #0D99FF;
-  }
-  .dropdown-menu {
-    margin-top: 10px;
-    position: relative;
-    width: 100%;
-   
-  }
-  .button-menu-body-item {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-  }
-  .button-menu-slidebar {
-    text-decoration: none;
-    color: #B3B3B3;
-    display: flex;
-    
-  }
-  .button-menu-slidebar span {
-    padding-top: 5px;
-    padding-left: 10px;
-    font-size: 13.01px  ;
-  }
-  .dropdown-content {
-    display: none;
-    position: relative;
-    
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: #B3B3B3;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {
-    background-color: #555;
-  }
- .dropdown-content a{
-    position: relative;
-    display: flex;
-    font-size: 13.01px  ;
- }
- .fixe {
-  position: absolute;
-  width: 6px;
-  height: 2px;
-  left: 14.8px;
-  top: 16.75px;
-  background: #FFFFFF;
-  border-radius: 60px;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  z-index: 0;
-}
-.dropdown-content a span {
-  padding-left: 20px;
-}
-.active{
-  width: 100%;
-  background-color: rgba(13, 153, 255, 0.05);;
-  
-}
-.active a{
-  color: #FFFFFF;
-}
-.star {
-box-sizing: border-box;
-position: absolute;
-width: 6.5px;
-height: 6.5px;
-left: 160.75px;
-top: 16.83px;
-
-border: 1px solid #888888;
-transform: rotate(-135deg);
-
-flex: none;
-order: 1;
-flex-grow: 0;
-z-index: 1;
-
-}
-</style>
 </head>
 <body>
 <div class="container">
@@ -184,6 +17,7 @@ z-index: 1;
                 <h1>CRM</h1>
             </div>
             <div class="menu-nav">
+              <div class="yourcompany">
                 <div class="title-menu">YOUR COMPANY</div>
                 <div class="dropdown-menu">
                     <button class="button-menu-body-item">
@@ -314,7 +148,342 @@ z-index: 1;
                 </button>
                 <div class="dropdown-content" id="dropdown-content-1"></div>
               </div>
-              <!-- END Employees -->
+              <!-- END Performance -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2740)">
+                      <path d="M6.75714 9.52344V15.8119" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.0349 6.5144V15.8119" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M15.2428 12.8464V15.8118" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2952 2.00513H6.70474C3.7103 2.00513 1.83331 4.12454 1.83331 7.12486V15.2187C1.83331 18.2191 3.70157 20.3385 6.70474 20.3385H15.2952C18.2984 20.3385 20.1666 18.2191 20.1666 15.2187V7.12486C20.1666 4.12454 18.2984 2.00513 15.2952 2.00513Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2740">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.171875)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                      
+                      
+                    <span>Projects</span>
+                  </a>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1"></div>
+              </div>
+              <!-- END Projects -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2748)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5096 3.43801H7.41104C5.50437 3.43068 3.94146 4.95051 3.89654 6.85626V16.6765C3.85437 18.6135 5.38979 20.2185 7.32671 20.2616C7.35512 20.2616 7.38262 20.2625 7.41104 20.2616H14.7343C16.6538 20.1837 18.1663 18.5979 18.1525 16.6765V8.27434L13.5096 3.43801Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.2688 3.427V6.09358C13.2688 7.39525 14.3211 8.45033 15.6228 8.454H18.1482" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.0974 14.9849H8.1474" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.2229 11.5452H8.14655" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2748">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.90625)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                      
+                      
+                    <span>Reports</span>
+                  </a>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1"></div>
+              </div>
+              <!-- END Reports -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2756)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79222 14.5803C12.1738 14.5803 15.0641 15.0927 15.0641 17.1396C15.0641 19.1865 12.1931 19.7136 8.79222 19.7136C5.40972 19.7136 2.52039 19.2058 2.52039 17.1579C2.52039 15.1101 5.39047 14.5803 8.79222 14.5803Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79223 11.6588C6.57206 11.6588 4.77173 9.85939 4.77173 7.63922C4.77173 5.41905 6.57206 3.61963 8.79223 3.61963C11.0115 3.61963 12.8118 5.41905 12.8118 7.63922C12.8201 9.85114 11.0326 11.6505 8.82064 11.6588H8.79223Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M15.1095 10.6155C16.5771 10.4092 17.7073 9.14971 17.7101 7.6253C17.7101 6.12288 16.6147 4.8762 15.1782 4.64062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M17.0458 14.145C18.4675 14.3568 19.4603 14.8554 19.4603 15.8821C19.4603 16.5888 18.9928 17.0472 18.2374 17.3341" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2756">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.640625)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                      
+                      
+                    <span>Manage Clients</span>
+                  </a>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1"></div>
+              </div>
+              <!-- END Manage Clients -->
+              <!-- END YOURCOMPANY -->
+              </div>
+              <div class="outfeature">
+                <div class="title-menu">OUR FEATURES</div>
+                <div class="dropdown-menu">
+                  <button class="button-menu-body-item">
+                    <a href="#" class="button-menu-slidebar">
+                      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_2765)">
+                        <path d="M7.11084 10.9285V14.3615" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.86244 12.645H5.35974" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.0856 11.033H12.9875" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.748 14.3098H14.6499" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.39948 1.47388C6.39948 2.15265 6.96092 2.70291 7.65349 2.70291H8.62193C9.69042 2.70672 10.5559 3.55495 10.5608 4.60215V5.22095" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0593 19.773C11.3045 19.8197 8.60026 19.8177 5.94166 19.773C2.99069 19.773 0.833313 17.6681 0.833313 14.776V10.5139C0.833313 7.62169 2.99069 5.51682 5.94166 5.51682C8.61483 5.47113 11.321 5.47208 14.0593 5.51682C17.0102 5.51682 19.1666 7.62265 19.1666 10.5139V14.776C19.1666 17.6681 17.0102 19.773 14.0593 19.773Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_2765">
+                        <rect width="20" height="20" fill="white" transform="translate(0 0.640625)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                      <span>Apps</span>
+                    </a>
+                    <div class="star"></div>
+                  </button>
+                  <div class="dropdown-content" id="dropdown-content-1">
+                    <a href="#"> 
+                      <i class="fixe"></i>
+                      <span>Dashboard Light</span>
+                    </a>
+                    <a href="#"> 
+                      <i class="fixe"></i>
+                      <span>Dashboard Dark</span>
+                    </a>
+                  </div>
+                  
+                </div>
+                <!-- END Apps -->
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8381 12.1068C15.4566 12.1068 15.9757 12.6173 15.8811 13.2281C15.3263 16.8214 12.2502 19.4894 8.54009 19.4894C4.43536 19.4894 1.10834 16.1624 1.10834 12.0586C1.10834 8.67754 3.67693 5.52806 6.56878 4.81596C7.19018 4.66254 7.82702 5.09964 7.82702 5.73938C7.82702 10.0738 7.97272 11.195 8.79579 11.8048C9.61886 12.4147 10.5867 12.1068 14.8381 12.1068Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8848 8.49735C18.934 5.71261 15.5134 1.22384 11.345 1.30103C11.0208 1.30682 10.7612 1.577 10.7468 1.90024C10.6416 4.18998 10.7834 7.15708 10.8626 8.50217C10.8867 8.92094 11.2157 9.24998 11.6335 9.2741C13.0162 9.35322 16.0914 9.46129 18.3483 9.11971C18.6552 9.0734 18.88 8.80708 18.8848 8.49735Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      
+                    <span>Charts</span>
+                  </a>
+                  <div class="star"></div>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1">
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Light</span>
+                  </a>
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Dark</span>
+                  </a>
+                </div>
+                
+              </div>
+              <!-- END Charts -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2783)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0122 1.93821L11.6874 5.28473C11.8515 5.61327 12.1684 5.84107 12.5359 5.89379L16.2832 6.43319C17.2091 6.56686 17.5775 7.68896 16.9075 8.3319L14.1977 10.9357C13.9314 11.1918 13.8101 11.5598 13.8731 11.9213L14.5126 15.5973C14.6701 16.5067 13.7023 17.2004 12.8747 16.7702L9.52545 15.0334C9.1971 14.863 8.80385 14.863 8.47455 15.0334L5.12525 16.7702C4.29771 17.2004 3.32986 16.5067 3.48831 15.5973L4.12686 11.9213C4.18986 11.5598 4.06864 11.1918 3.80233 10.9357L1.09254 8.3319C0.422489 7.68896 0.790922 6.56686 1.71678 6.43319L5.4641 5.89379C5.83158 5.84107 6.14942 5.61327 6.31359 5.28473L7.98776 1.93821C8.40201 1.11076 9.59799 1.11076 10.0122 1.93821Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2783">
+                      <rect width="18" height="18" fill="white" transform="translate(0 0.109375)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                    <span>Bootstrap</span>
+                  </a>
+                  <div class="star"></div>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1">
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Light</span>
+                  </a>
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Dark</span>
+                  </a>
+                </div>
+                
+              </div>
+              <!-- END Bootstrap -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2789)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.634 14.046C18.634 17.3258 16.7007 19.2591 13.4209 19.2591H6.28738C2.99929 19.2591 1.06238 17.3258 1.06238 14.046V6.896C1.06238 3.62075 2.26688 1.6875 5.54763 1.6875H7.38096C8.03913 1.68842 8.65879 1.99733 9.05296 2.52442L9.88988 3.63725C10.2859 4.16342 10.9055 4.47325 11.5637 4.47417H14.1579C17.446 4.47417 18.6596 6.148 18.6596 9.49475L18.634 14.046Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M5.85754 12.8828H13.8646" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2789">
+                      <rect width="20" height="20" fill="white" transform="translate(0 0.625)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                    <span>Plugins</span>
+                  </a>
+                  <div class="star"></div>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1">
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Light</span>
+                  </a>
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Dark</span>
+                  </a>
+                </div>
+                
+              </div>
+              <!-- END Apps -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2796)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.75 6.05208C2.75 3.64564 2.77577 2.84375 5.95833 2.84375C9.1409 2.84375 9.16667 3.64564 9.16667 6.05208C9.16667 8.45853 9.17682 9.26042 5.95833 9.26042C2.73985 9.26042 2.75 8.45853 2.75 6.05208Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8333 6.05208C12.8333 3.64564 12.8591 2.84375 16.0416 2.84375C19.2242 2.84375 19.25 3.64564 19.25 6.05208C19.25 8.45853 19.2601 9.26042 16.0416 9.26042C12.8232 9.26042 12.8333 8.45853 12.8333 6.05208Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.75 16.1354C2.75 13.7289 2.77577 12.927 5.95833 12.927C9.1409 12.927 9.16667 13.7289 9.16667 16.1354C9.16667 18.5418 9.17682 19.3437 5.95833 19.3437C2.73985 19.3437 2.75 18.5418 2.75 16.1354Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8333 16.1354C12.8333 13.7289 12.8591 12.927 16.0416 12.927C19.2242 12.927 19.25 13.7289 19.25 16.1354C19.25 18.5418 19.2601 19.3437 16.0416 19.3437C12.8232 19.3437 12.8333 18.5418 12.8333 16.1354Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2796">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.09375)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                    <span>Widget</span>
+                  </a>
+                  
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1"> </div>
+                
+              </div>
+              <!-- END Widget -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2804)">
+                      <path d="M14.4065 15.6995H7.78821" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.4065 11.8618H7.78821" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.3137 8.0332H7.78827" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5829 3.34888C14.5829 3.34888 7.54563 3.35255 7.53463 3.35255C5.00463 3.36813 3.43805 5.0328 3.43805 7.57196V16.0016C3.43805 18.5536 5.01655 20.2247 7.56855 20.2247C7.56855 20.2247 14.6049 20.2219 14.6168 20.2219C17.1468 20.2064 18.7143 18.5408 18.7143 16.0016V7.57196C18.7143 5.01996 17.1349 3.34888 14.5829 3.34888Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2804">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.828125)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+                    <span>Forms</span>
+                  </a>
+                  <div class="star"></div>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1">
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Light</span>
+                  </a>
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Dark</span>
+                  </a>
+                </div>
+                
+              </div>
+              <!-- END Forms -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.46932 12.5383H0.693665" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.04547 3.65356H14.8211" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.99912 3.60385C4.99912 2.41617 4.02914 1.45312 2.8329 1.45312C1.63667 1.45312 0.666687 2.41617 0.666687 3.60385C0.666687 4.79154 1.63667 5.75459 2.8329 5.75459C4.02914 5.75459 4.99912 4.79154 4.99912 3.60385Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 12.5024C15.3333 11.3147 14.3641 10.3516 13.1679 10.3516C11.9709 10.3516 11.0009 11.3147 11.0009 12.5024C11.0009 13.69 11.9709 14.6531 13.1679 14.6531C14.3641 14.6531 15.3333 13.69 15.3333 12.5024Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      
+                      
+                    <span>Table</span>
+                  </a>
+                  <div class="star"></div>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1">
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Light</span>
+                  </a>
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Dark</span>
+                  </a>
+                </div>
+                
+              </div>
+              <!-- END Table -->
+
+              <div class="dropdown-menu">
+                <button class="button-menu-body-item">
+                  <a href="#" class="button-menu-slidebar">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2_2822)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3691 18.7937C18.086 18.7937 19.4784 17.4022 19.4793 15.6853V15.6835V13.2085C18.3454 13.2085 17.4269 12.29 17.426 11.156C17.426 10.023 18.3445 9.10363 19.4784 9.10363L19.4793 6.62863C19.4812 4.9108 18.0906 3.51747 16.3737 3.51562H16.3682H5.63216C3.91433 3.51562 2.52191 4.90712 2.521 6.62496V9.18337C3.6155 9.14487 4.53308 10.001 4.57158 11.0955C4.5725 11.1157 4.57341 11.1359 4.57341 11.156C4.57433 12.2881 3.65858 13.2066 2.5265 13.2085H2.521V15.6835C2.52008 17.4004 3.9125 18.7937 5.62941 18.7937H16.3691Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3403 8.38606L11.905 9.52914C11.96 9.64098 12.0663 9.71889 12.1901 9.73723L13.4523 9.92148C13.7649 9.96731 13.8887 10.3505 13.6632 10.5696L12.7502 11.4587C12.6603 11.5458 12.62 11.6714 12.6402 11.7952L12.8556 13.051C12.9087 13.3617 12.5833 13.5982 12.3047 13.4516L11.1762 12.8585C11.0653 12.7998 10.9333 12.7998 10.8224 12.8585L9.69491 13.4516C9.41533 13.5982 9.08991 13.3617 9.14308 13.051L9.3585 11.7952C9.37958 11.6714 9.33833 11.5458 9.2485 11.4587L8.33641 10.5696C8.11091 10.3505 8.23466 9.96731 8.54633 9.92148L9.80858 9.73723C9.93233 9.71889 10.0396 9.64098 10.0946 9.52914L10.6583 8.38606C10.7977 8.10373 11.201 8.10373 11.3403 8.38606Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_2_2822">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.078125)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                    <span>Pages</span>
+                  </a>
+                  <div class="star"></div>
+                </button>
+                <div class="dropdown-content" id="dropdown-content-1">
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Light</span>
+                  </a>
+                  <a href="#"> 
+                    <i class="fixe"></i>
+                    <span>Dashboard Dark</span>
+                  </a>
+                </div>
+              </div>
+              <!-- END Pages -->
+
+              <div class="helpdesk">
+                  <button>Help Desk</button>
+              </div>
+              </div>
+              <!-- END Outfeature -->
             </div>
         </div>
     </div>
@@ -337,56 +506,5 @@ z-index: 1;
     <!-- END HEADER -->
 </div>
 </body>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var dropdowns = document.querySelectorAll('.button-menu-body-item');
-    dropdowns.forEach(function(dropdown) {
-        dropdown.addEventListener('click', function() {
-            var content = this.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-                this.classList.remove('active');
-                var paths = this.querySelectorAll('svg path');
-                paths.forEach(function(path) {
-                    path.style.stroke = '#888888'; 
-                });
-            } else {
-                dropdowns.forEach(function(item) {
-                    var otherContent = item.nextElementSibling;
-                    if (otherContent !== content) {
-                        otherContent.style.display = 'none';
-                        item.classList.remove('active');
-                        var otherPaths = item.querySelectorAll('svg path');
-                        otherPaths.forEach(function(path) {
-                            path.style.stroke = '#888888'; 
-                        });
-                    }
-                });
-                content.style.display = 'block';
-                this.classList.add('active');
-                var paths = this.querySelectorAll('svg path');
-                paths.forEach(function(path) {
-                    path.style.stroke = '#0D99FF'; 
-                });
-            }
-        });
-    });
-    
-    // Close dropdowns when clicking outside
-    window.addEventListener('click', function(event) {
-        dropdowns.forEach(function(dropdown) {
-            var content = dropdown.nextElementSibling;
-            if (!dropdown.contains(event.target) && !content.contains(event.target)) {
-                content.style.display = 'none';
-                dropdown.classList.remove('active');
-                var paths = dropdown.querySelectorAll('svg path');
-                paths.forEach(function(path) {
-                    path.style.stroke = '#888888'; 
-                });
-            }
-        });
-    });
-});
-
-</script>
+<script src="js/silde-bar-menu.js"></script>
 </html>
