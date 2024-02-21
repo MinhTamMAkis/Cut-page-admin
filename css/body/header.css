@@ -24,12 +24,13 @@
   
   .input::placeholder {
     color: #777;
+    font-size: 14px;
   }
   
   .icon {
     position: absolute;
     left: 1rem;
-    fill: #777;
+    fill: #FFF;
     width: 1rem;
     height: 1rem;
   }
@@ -105,4 +106,5 @@
 .user-information .information-data .email-user{
     color: #E1E1E1;
 }
+
 
