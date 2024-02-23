@@ -60,7 +60,7 @@
     background-color: #0D99FF;
     border: solid 1px #0D99FF;
     padding: 7px;
-    font-size: 1rem;
+    font-size:13px;
     border-radius: 5px;
     color: #FFF;
 
@@ -101,9 +101,11 @@
     
 }
 .user-information .information-data .name-user {
+    font-size: 13px;
     color: #FFFFFF;
 }
 .user-information .information-data .email-user{
+    font-size: 13px;
     color: #E1E1E1;
 }
 
