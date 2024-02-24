@@ -11,3 +11,8 @@ header {
 #header-menu {
     display: flex;
 }
+.body {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

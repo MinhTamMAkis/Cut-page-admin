@@ -1,0 +1,8 @@
+@media (max-width:1620px) {
+    .row{
+        display: block;
+    }
+    .body {
+        position: relative;
+    }
+}

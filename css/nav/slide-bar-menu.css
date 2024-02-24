@@ -10,6 +10,8 @@ body {
     height: 49px;
     background: #202020;
     cursor: pointer;
+    position: relative;
+    z-index: 3;
   }
   
   .hamburger input {
@@ -51,11 +53,12 @@ body {
   /* Slidebar*/
   .nav-slider {
     display: none;
-    position: relative;
+    position: absolute;
     height: 100%;
     background-color: #242424;
     color: aliceblue;
     width: 230px;
+    z-index: 2;
   }
   
   .contai-slibar{

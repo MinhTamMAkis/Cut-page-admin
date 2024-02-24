@@ -2,20 +2,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkbox = document.getElementById('check-icon');
     const navSlider = document.getElementById('menu-slide');
     const label = document.querySelector('.hamburger');
+    const row =document.querySelector('.row');
 
     label.addEventListener('click', function () {
         if (navSlider.style.display === 'none' || navSlider.style.display === '') {
             navSlider.style.display = 'block';
+            // row.style.display = 'block';
+
         } else {
             navSlider.style.display = 'none';
+            // row.style.display = 'flex';
+
         }
     });
 
     checkbox.addEventListener('change', function () {
         if (checkbox.checked) {
             navSlider.style.display = 'block';
+            // row.style.display = 'block';
+
         } else {
             navSlider.style.display = 'none';
+            // row.style.display = 'flex';
+
         }
     });
         
