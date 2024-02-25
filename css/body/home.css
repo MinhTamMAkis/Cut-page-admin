@@ -200,6 +200,7 @@ progress::-webkit-progress-bar {
     display: flex;
 }
 .project-overview{
+    position: relative;
     width: 790px;
     border: solid 1px #444444;
     height: 450px;
@@ -212,4 +213,189 @@ progress::-webkit-progress-bar {
     height: 450px;
     border-radius: 5px;
     margin-left: 10px;
+}
+.top-project-overview{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 50px;
+}
+.top-project-overview h4 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-family: Poppins;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.list-button-top{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.list-button-top  .action-button-chart {
+    background-color: #0D99FF !important;
+}
+.list-button-top button {
+    width: 70.89px;
+    height: 29.5px;
+    padding: 5px, 14.89px, 4.5px, 15px;
+    border-radius: 4px;
+    background-color: #444444;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.mid-project-overview {
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+}
+#Chart-overview{
+    width: 100%;
+    height: 300px;
+   
+}
+
+.bottom-project-overview{
+    display: flex;
+    width: 100%;
+    height: 76px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+
+}
+.data-overview-bottom{
+    padding: 10px;
+    width: 25%;
+    height: 76px;
+    border: solid 1px #444444;
+    text-align: center;
+    
+}
+.data-overview-bottom span {
+    color: #828690;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.data-overview-bottom h4{
+    margin-top: 5px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.bottom-project-overview div:nth-child(1){
+    border-radius: 0 0 0 5px;
+}
+.bottom-project-overview div:nth-child(2){
+    border-radius: 0 0 0 0;
+}
+.bottom-project-overview div:nth-child(3){
+    border-radius: 0 0 0 0;
+
+}
+.bottom-project-overview div:nth-child(4){
+    border-radius: 0 0 5px 0;
+
+}
+/*  */
+.to-do-item{
+    position: relative;
+    height: 450px;
+}
+.text-right-todo h5{
+    position: absolute;
+    color: #FFFFFF;
+    right: 10px;
+    bottom: 10px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.manager-todo{
+    height: 100%;
+}
+.item-todo{
+    
+}
+.title-item {
+    margin-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    gap: 10px;
+}
+.title-item p {
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.main-item {
+    padding: 18px;
+}
+.main-item ,.info-item-todo .infor-item{
+    display: flex;
+    gap: 10px;
+}
+.list-button button {
+    width: 28px;
+    height: 28px;
+}
+
+.info-item-todo .infor-item p{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.info-item-todo .infor-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background: #1E1E1E !important;
+    border: 1px solid #444444;
+}
+
+.info-item-todo .date-item p{
+    color: #828690;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.line {
+    height: 1px;
+    width: 100%;
+    position: relative;
+    background-color: #444444;
+    left: 0;
 }
