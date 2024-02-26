@@ -48,7 +48,7 @@
 }
 /* First total detail data */
 .row {
-    height: 500px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
 }
@@ -131,7 +131,6 @@ progress {
     border: 0;
     height: 7px;
     border-radius: 20px;
-    background: #E6EAEE;
     color: #0D99FF;
 
 }
@@ -336,9 +335,7 @@ progress::-webkit-progress-bar {
 .manager-todo{
     height: 100%;
 }
-.item-todo{
-    
-}
+
 .title-item {
     margin-top: 15px;
     padding-left: 15px;
@@ -398,4 +395,240 @@ text-align: left;
     position: relative;
     background-color: #444444;
     left: 0;
+}
+.total-earn .title-total-earn h4{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+.total-earn .main-total-earn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.main-total-earn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-total-earn h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+
+.earn-options ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    gap: 10px;
+}
+.earn-options ui li{
+    position: relative;
+    
+}
+.main-total-earn .earn-options ul>li>button {
+    padding: 10px;
+    color: #888888;
+}
+.earn-options .action-earn {
+    color: #FFFFFF !important;
+    
+
+}
+.earn-options ul li .action-line{
+    width: 100%;
+    height: 3px;
+    background-color: #0D99FF;
+}
+
+
+.chart-total-earn {
+    width: 100%;
+    height: 420px;
+}
+/* ROW SECOND */
+.col-50{
+    width: 800px;
+    height: 400px;
+}
+.col-50 .inside-col-50{
+    position: relative;
+    border: solid 1px #444444;
+    width: 790px;    
+    height: 100%;
+    margin-left: 10px;
+    border-radius:5px;
+}
+
+.inside-col-50 .title h4,.inside-col-50 .title p {
+    position: absolute;
+    top: 20px;
+}
+.inside-col-50 .title h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    left: 20px;
+
+}
+.inside-col-50 .title p{
+    right: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #0D99FF;
+    gap: 2px;
+}
+#usersTable {
+    margin-top: 60px;
+    width: 100%;
+}
+#usersTable .top-table {
+    background-color: #1E1E1E;
+    position: relative;
+}
+#usersTable .top-table::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    left: 0;
+    z-index: -1;
+}
+th {
+    padding: 10px 20px 10px 20px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+
+}
+td{
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 300;
+    
+}
+#user-name {
+    display: flex;
+}
+td img{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.list-user {
+    display: flex;
+    position: relative;
+
+}
+.list-user li img{
+    border: solid 3px #888888;
+}
+.list-user li {
+    margin-left: -10px;
+    
+}
+td button {
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    font-size: 12px;
+
+}
+td .defalt {
+    background-color: #1E1E1E;
+    color: #0D99FF;
+}
+td .pending {
+    background: rgba(255, 94, 94, 0.15);
+    color: #FF5E5E;
+}
+td .completed {
+    background: rgba(58, 201, 119, 0.1);
+    color: #3AC977;
+}
+.pagi {
+    position: relative;
+}
+.pagination {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    
+  }
+  
+  .pagination a {
+    color: #0D99FF;
+    float: left;
+    padding: 5px 8px;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+  
+  .pagination a.active-page {
+    background-color: #0D99FF;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active-page) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  .pagination a img{
+    margin-right: unset !important;
+    height: 13px;
+    width: 7px;
+    border-radius: unset !important;
+
+  }
+
+  .progress-table{
+    height: 5px;
+  }
+
+  .error::-webkit-progress-value {
+    height: 2px;
+    background: red;
+}
+.progress-table::-webkit-progress-bar {
+    height: 5px;
+    width: 62px;
+    border: 0;
+
+    background: #1E1E1E;
+}
+
+.progress-table::-moz-progress-bar {
+    height: 5px;
+    border: 0;
+
+}
+.succes::-webkit-progress-value{
+    height: 2px;
+    background: #3AC977;
+}
+
+.progress{
+    padding: unset;
 }

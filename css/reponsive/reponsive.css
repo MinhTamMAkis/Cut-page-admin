@@ -5,4 +5,14 @@
     .body {
         position: relative;
     }
+    
+}
+@media (max-width:1024px) {
+    .project-overview{
+        width: 590px;
+    }
+    .mid-project-overview canvas {
+        height: 100% !important;
+    }
+    
 }

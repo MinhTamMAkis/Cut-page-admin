@@ -16,3 +16,6 @@ header {
     left: 50%;
     transform: translateX(-50%);
 }
+li {
+    list-style: none;
+}

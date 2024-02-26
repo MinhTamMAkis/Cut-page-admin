@@ -603,6 +603,7 @@
         <div class="line-top"></div>
       </div>
         <div class="body">
+            <!-- First Row -->
             <div class="row">
                 <div class="col-7">
                     <div class="col-for-4-item">
@@ -1042,9 +1043,186 @@
                 </div>
                 <div class="col-3">
                     <div class="total-earn">
-                      
+                        <div class="title-total-earn">
+                          <h4>Total Earning</h4>
+                        </div>
+                        <div class="main-total-earn">
+                          <h2>$6,743.00</h2>
+                          <div class="earn-options">
+                              <ul>
+                                  <li><button class="action-earn ">Day </button><div class="action-line"></div></li>
+                                  <li><button>Week</button></li>
+                                  <li><button>Month</button></li>
+                                  <li><button>Year</button></li>
+                              </ul>
+                          </div>
+                          <div class="chart-total-earn">
+                            <canvas id="Chart-total-earn" style="width: 430px;max-width: 600px; height: 500px;"></canvas>
+                          </div>
+                      </div>
                     </div>
                 </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row">
+              <div class="col-50">
+                  <div class="inside-col-50">
+                      <div class="title" style="display: flex;">
+                          <h4>Active Projects</h4>
+                          <p style="display: flex;">
+                            <img style="width: 10px; height: 13px;" src="img/excel-icon.png" alt="">
+                            <span>Export Report</span>
+                          </p>
+                      </div>
+                      <table id="usersTable">
+                          <tr class="top-table">
+                            <th>Project Name <i></i></th>
+                            <th>Project Lead </th>
+                            <th>Progress</th>
+                            <th>Assignee</th>
+                            <th>Status </th>
+                            <th>Due Date</th>
+                          </tr>
+                        
+                          <tr class="item">
+                            <td>Batman</td>
+                            <td id="user-name">
+                              <img src="img/avata.jpg" alt="">
+                              Liam Risher
+                            </td>
+                            <td class="progress">
+                              <progress class="progress-table" value="53" max="100" style="width: 65px; "></progress>
+                            </td>
+                            <td>
+                              <ul class="list-user">
+                                <li><img src="img/avata.jpg" alt=""></li>
+                                <li><img src="img/user1.jpg" alt=""></li>
+                                <li><img src="img/user2.png" alt=""></li>
+                              </ul>
+                            </td>
+                            <td>
+                                <button class="defalt">Inprogress</button>
+                            </td>
+                            <td>
+                              <p>06 Sep 2021</p>
+                            </td>
+                          </tr>
+                          <tr class="item">
+                            <td>Bender Project</td>
+                            <td id="user-name">
+                              <img src="img/user1.jpg" alt="">
+                              Oliver Noah
+                            </td>
+                            <td class="progress">
+                              <progress class="progress-table error" value="30" max="100" ></progress>
+                            </td>
+                            <td>
+                              <ul class="list-user">
+                                <li><img src="img/avata.jpg" alt=""></li>
+                                <li><img src="img/user1.jpg" alt=""></li>
+                                <li><img src="img/user2.png" alt=""></li>
+                              </ul>
+                            </td>
+                            <td>
+                                <button class="pending">Pending</button>
+                            </td>
+                            <td>
+                              <p>06 Sep 2021</p>
+                            </td>
+                          </tr>
+                          <tr class="item">
+                            <td>Bigfish</td>
+                            <td id="user-name">
+                              <img src="img/avata.jpg" alt="">
+                              Donald Benjamin
+                            </td>
+                            <td class="progress">
+                              <progress class="progress-table error" value="30" max="100" ></progress>
+                            </td>
+                            <td>
+                              <ul class="list-user">
+                                <li><img src="img/avata.jpg" alt=""></li>
+                                <li><img src="img/user1.jpg" alt=""></li>
+                                <li><img src="img/user2.png" alt=""></li>
+                              </ul>
+                            </td>
+                            <td>
+                                <button class="pending">Inprogress</button>
+                            </td>
+                            <td>
+                              <p>06 Sep 2021</p>
+                            </td>
+                          </tr>
+                          <tr class="item">
+                            <td>Canary</td>
+                            <td id="user-name">
+                              <img src="img/user1.jpg" alt="">
+                              Elijah James
+                            </td>
+                            <td class="progress">
+                              <progress class="progress-table succes" value="40" max="100" ></progress>
+                            </td>
+                            <td>
+                              <ul class="list-user">
+                                <li><img src="img/avata.jpg" alt=""></li>
+                                <li><img src="img/user1.jpg" alt=""></li>
+                                <li><img src="img/user2.png" alt=""></li>
+                                <li><img src="img/avata.jpg" alt=""></li>
+                              </ul>
+                            </td>
+                            <td>
+                                <button class="completed">Completed</button>
+                            </td>
+                            <td>
+                              <p>06 Sep 2021</p>
+                            </td>
+                          </tr>
+                          <tr class="item">
+                            <td>Casanova</td>
+                            <td id="user-name">
+                              <img src="img/avata.jpg" alt="">
+                              William Risher
+                            </td>
+                            <td class="progress">
+                              <progress class="progress-table" value="53" max="100" ></progress>
+                            </td>
+                            <td>
+                              <ul class="list-user">
+                                <li><img src="img/avata.jpg" alt=""></li>
+                                <li><img src="img/user1.jpg" alt=""></li>
+                                <li><img src="img/user2.png" alt=""></li>
+                                
+                              </ul>
+                            </td>
+                            <td>
+                                <button class="defalt">Inprogress</button>
+                            </td>
+                            <td>
+                              <p>06 Sep 2021</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              Showing 1 to 5 of 10 entries
+                            </td>
+                            <td colspan="2"></td>
+                            <td colspan="2" class="pagi">
+                              <div class="pagination">
+                                <a href="#" ><img src="img/arrow-left.png" alt=""></a>
+                                <a href="#" class="active-page">1</a>
+                                <a href="#" >2</a>
+                                <a href="#"><img src="img/arrow-right.png" alt=""></a>
+                              </div>
+                            </td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+              <div class="col-50">
+                <div class="inside-col-50">
+                    
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -1055,6 +1233,15 @@
 <script src="js/silde-bar-menu.js"></script>
 <script src="js/cricle-chart.js"></script>
 <script src="js/chart-data.js"></script>
+<script>
+  let tid = "#usersTable";
+  let headers = document.querySelectorAll(tid + " th");
 
-
+  // Sort the table element when clicking on the table headers
+  headers.forEach(function(element, i) {
+    element.addEventListener("click", function() {
+      w3.sortHTML(tid, ".item", "td:nth-child(" + (i + 1) + ")");
+    });
+  });
+</script>
 </html>
