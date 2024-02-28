@@ -632,3 +632,69 @@ td .completed {
 .progress{
     padding: unset;
 }
+/* MAP */
+.map{
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+    width: 500px;
+    height: 340px;
+}
+#mapdiv {
+    
+    width: 100%;
+    height: 100%;
+  }
+/* END MAP */
+.country {
+    position: absolute;
+    width: 290px;
+    height: 400px                                                                       ;
+    right: 0;
+    top: 0;
+}
+.country .line{
+    height: 100%;
+    width: 1px;
+
+}
+.data-country img{
+    width: 30px;
+    height: 30.19px;
+}
+.body-data-country {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+.data-country{
+    display: flex;
+    margin-bottom: 10px;
+}
+.info-country {
+    padding-left: 10px;
+}
+.name-country {
+    position: relative;
+    display: flex;
+    color: #828690;
+}
+.name-country  p {
+    position: absolute;
+    right: 0;
+}
+.info-country .progress-country {
+    padding-bottom: 10px;
+}
+/* COUNTRY */
+.progress-country::-webkit-progress-value {
+    height: 2px;
+    background: #0D99FF;
+}
+.progress-table::-webkit-progress-bar {
+    height: 5px;
+    width: 100%;
+    border: 0;
+
+    background: #1E1E1E;
+}
