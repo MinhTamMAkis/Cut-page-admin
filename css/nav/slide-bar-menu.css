@@ -54,7 +54,7 @@ body {
   .nav-slider {
     display: none;
     position: absolute;
-    height: 100%;
+    height: 2000px;
     background-color: #242424;
     color: aliceblue;
     width: 230px;
@@ -62,7 +62,7 @@ body {
   }
   
   .contai-slibar{
-    min-height: 100vh;
+    height: 100%;
   }
   .contai-slibar .logo{
     background-color: #2C2C2C;

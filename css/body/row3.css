@@ -1,0 +1,20 @@
+    .chatbox {
+        width: 530px;
+        height: 615px;
+        border: solid 1px #444444;
+        border-radius: 5px;
+    }
+    .chatbox .top-chatbox {
+        position: relative;
+        height: 68px;
+        width: 100%;
+        display: flex;
+        
+
+    }
+    .chatbox .top-chatbox .title-chat {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }

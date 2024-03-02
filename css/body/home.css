@@ -662,14 +662,16 @@ td .completed {
     width: 30px;
     height: 30.19px;
 }
+
 .body-data-country {
-    position: absolute;
-    top: 40px;
+    position: relative;
+    top: 5px;
     left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 .data-country{
     display: flex;
-    margin-bottom: 10px;
 }
 .info-country {
     padding-left: 10px;
@@ -697,4 +699,15 @@ td .completed {
     border: 0;
 
     background: #1E1E1E;
+}
+.line-country {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: #444444;
+}
+.list-country {
+    position: absolute;
+    top: 0;
 }
