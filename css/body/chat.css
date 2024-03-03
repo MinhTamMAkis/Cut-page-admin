@@ -1,0 +1,205 @@
+input[type=text]:focus, input[type=password]:focus{
+    background: rgb(238, 238, 238);
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder{
+    color: rgb(5, 5, 230);
+    font-weight: 500;
+}
+
+.messageBox .textA{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#message{
+    resize: none;
+    overflow-y: hidden;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    width: 95%;
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    top: -25px;
+
+}
+
+.button-s1 {
+    background-color: #0D99FF;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-s1 span{
+    font-size: 15px;
+}
+.button-s1 img{
+    width: 16px;
+    height: 16px;
+}
+
+#genMeetLink a{
+    color: rgb(5, 5, 230);
+}
+
+.messageBox{
+    border-radius: 5px;
+    
+    margin: 3%;
+    background-color: #171717;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94%;
+    height: calc(var(--chatboxH) + 5px);
+    display: flex;
+    align-items: center;
+    padding: 7px 7px 7px 27px;
+}
+
+.nameAlert{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 130px;
+    border-radius: 20px;
+}
+
+.chatArea{
+    height: calc(100vh - var(--chatboxH));
+    width: 100%;
+    padding: 16px;
+    /* overflow-y: scroll; */
+}
+
+.prof{
+    min-width: 35px;
+    min-height: 35px;
+    margin: auto 10px 80px 10px;
+    background: black;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messArea{
+    display: grid;
+    grid-row-gap: 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+
+.message{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    max-width: 40rem;
+    margin-bottom: 35px;
+}
+
+.otherM{
+    margin-right: auto;
+}
+
+.mMess{
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.mMess .messArea .textM{
+    background-color: #383838;
+    color: white;
+    margin-left: auto;
+    transition: .6s cubic-bezier(.07,.76,.13,1.02);
+}
+.rMess .messArea .textM{
+    background-color: #171717;
+    color: white;
+    margin-right: auto;
+    transition: .6s cubic-bezier(.07,.76,.13,1.02);
+}
+
+.newMmess{
+    transform: translateY(100px) scale(3);
+}
+
+.otherM .messArea .textM{
+    background-color: white;
+    justify-content: right;
+    align-items: end;
+}
+.time-Mess {
+    position: absolute;
+    bottom: 0;
+    color: #828690;
+}
+.another-user-time {
+    left: 60px;
+
+}
+.user-time {
+    right: 10px;
+}
+.mMess .messArea .textM a{
+    font-size: 13px;
+    color: white;
+}
+
+.messArea .textM a{
+    font-weight: 500;
+}
+.message .user-text {
+    text-align: end;
+}
+.message .textM{
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.03); 
+    box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.03);
+    font-size: 13px;
+    
+}
+
+
+#titleFirst{
+    width: 221px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+
+
+
+
+.timeId{
+    color: #828690;
+    text-align: center;
+    margin: 12px;
+    font-size: 14px;
+}
+
+
+
+
